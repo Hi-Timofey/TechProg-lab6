@@ -19,6 +19,8 @@ from django.urls import path
 
 urlpatterns = [
     path("admin/", admin.site.urls),
+    path("register/", views.register_user),
+    path("login/", views.login_user),
     path("articles/", views.archive),
     path("articles/new/", views.create_post),
     path('articles/<int:article_id>/', views.get_article, name='get_article')

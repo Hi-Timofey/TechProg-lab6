@@ -6,6 +6,11 @@
     <link rel="stylesheet" href="{{ STATIC_URL }}/static/index.css">
 </head>
 <body  class="article">
+    <h4>
+        <a href="/articles/">Вернуться ко всем записям</a>
+        <a href="/register"><h4 class="post-title">Регистрация</h4></a>
+        <a href="/login/">Войти</a>
+    </h4>
     <div class="one-post" >
         <h2 class="post-title">{{ post.title }}</h2>
         <div class="article-info">
@@ -15,8 +20,5 @@
         <p class="article-text">{{ post.text }}</p>
     </div>
     <h6 >Post id:  {{ post.id }}</h3>
-    <h4>
-        <a href="/articles/">Вернуться ко всем записям</a>
-    </h4>
 </body>
 </html>
